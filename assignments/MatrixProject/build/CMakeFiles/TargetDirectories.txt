@@ -1,0 +1,4 @@
+C:/Users/abail/operating-system/assignments/MatrixProject/build/CMakeFiles/MatrixMath.dir
+C:/Users/abail/operating-system/assignments/MatrixProject/build/CMakeFiles/MatrixApp.dir
+C:/Users/abail/operating-system/assignments/MatrixProject/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/abail/operating-system/assignments/MatrixProject/build/CMakeFiles/ZERO_CHECK.dir
