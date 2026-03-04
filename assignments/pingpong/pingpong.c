@@ -10,7 +10,7 @@ main(int argc, char *argv[])
   int p2c[2], c2p[2];
   char b = 'x';
 
-  int n = 100000;           // default iterations
+  int n = 100000;
   if(argc >= 2){
     n = atoi(argv[1]);
     if(n <= 0){
