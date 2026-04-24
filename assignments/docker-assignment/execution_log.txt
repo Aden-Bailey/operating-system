@@ -1,12 +1,61 @@
 docker build -t cs-docker-assignment .
-[build output here]
+[+] Building 63.9s (11/11) FINISHED                                                    docker:default
+ => [internal] load build definition from Dockerfile                                             0.1s
+ => => transferring dockerfile: 745B                                                             0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:22.04                                  0.6s
+ => [auth] library/ubuntu:pull token for registry-1.docker.io                                    0.0s
+ => [internal] load .dockerignore                                                                0.1s
+ => => transferring context: 2B                                                                  0.0s
+ => [1/5] FROM docker.io/library/ubuntu:22.04@sha256:962f6cadeae0ea6284001009daa4cc9a8c37e75d1f  2.0s
+ => => resolve docker.io/library/ubuntu:22.04@sha256:962f6cadeae0ea6284001009daa4cc9a8c37e75d1f  0.0s
+ => => sha256:f63eb04151bcac21ad049f8d781b97b219aba392c5457907f8f3e88e43eb48e 29.74MB / 29.74MB  0.7s
+ => => extracting sha256:f63eb04151bcac21ad049f8d781b97b219aba392c5457907f8f3e88e43eb48ec        1.3s
+ => [internal] load build context                                                                0.0s
+ => => transferring context: 88B                                                                 0.0s
+ => [2/5] RUN apt-get update && apt-get install -y     git     lynx     python3     build-esse  36.9s
+ => [3/5] WORKDIR /workspace                                                                     0.2s 
+ => [4/5] RUN git clone https://github.com/mit-pdos/xv6-public.git                               1.5s 
+ => [5/5] COPY hello.py /workspace/hello.py                                                      0.1s 
+ => exporting to image                                                                          22.3s 
+ => => exporting layers                                                                         17.1s 
+ => => exporting manifest sha256:66f3a907e5af381407f48d59cdecdacca5814ce5f83a25d74508c07dfad076  0.0s 
+ => => exporting config sha256:43a101164198d355254c9b5485d508fbb3a42ea7e61e8ef27c7d56fa7598b5e8  0.0s
+ => => exporting attestation manifest sha256:844bf36b86fa27149ce79f9afe8462225748f91789611d632e  0.0s
+ => => exporting manifest list sha256:06cbf50e3a7796285f9005c6637be1d5ee5e4b8497feabd0079a51ac5  0.0s
+ => => naming to docker.io/library/cs-docker-assignment:latest                                   0.0s
+ => => unpacking to docker.io/library/cs-docker-assignment:latest                                5.1s
 
 docker run cs-docker-assignment
 Hello World
 My name is Aden Bailey
 
 docker run cs-docker-assignment lynx --version
-[lynx version output here]
+Lynx Version 2.9.0dev.10 (11 Aug 2021)
+libwww-FM 2.14, SSL-MM 1.4.1, GNUTLS 3.7.1, ncurses 6.3.20211021(wide)
+Built on linux-gnu.
+
+Copyrights held by the Lynx Developers Group,
+the University of Kansas, CERN, and other contributors.
+Distributed under the GNU General Public License (Version 2).
+See https://lynx.invisible-island.net/ and the online help for more information.
 
 docker run cs-docker-assignment ls /workspace/xv6-public
-[repository files listed here]
+sysfile.c
+sysproc.c
+toc.ftr
+toc.hdr
+trap.c
+trapasm.S
+traps.h
+types.h
+uart.c
+ulib.c
+umalloc.c
+user.h
+usertests.c
+usys.S
+vectors.pl
+vm.c
+wc.c
+x86.h
+zombie.c
