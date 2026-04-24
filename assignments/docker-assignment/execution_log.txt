@@ -1,0 +1,12 @@
+docker build -t cs-docker-assignment .
+[build output here]
+
+docker run cs-docker-assignment
+Hello World
+My name is Aden Bailey
+
+docker run cs-docker-assignment lynx --version
+[lynx version output here]
+
+docker run cs-docker-assignment ls /workspace/xv6-public
+[repository files listed here]
